@@ -1,0 +1,102 @@
+@media only screen and (max-width: 700px) {
+	            /* styles for Phones and smaller */
+
+	            body, html {
+	                height:100%;
+	                background: linear-gradient(#740f12, #fcb141) no-repeat center center fixed;  
+	                -webkit-background-size: cover;
+				  	-moz-background-size: cover;
+				  	-o-background-size: cover;
+				  	background-size: cover;
+				  	overflow: auto;
+	            } 
+	            body
+	                {
+	                    /*background-image:url("https://cdn.pixabay.com/photo/2015/05/15/14/22/conference-room-768441_960_720.jpg");*/
+	                    /*background-image: linear-gradient(#740f12, #fcb141);*/
+	                    background-size:auto 100%;
+	                    background-repeat: no-repeat;
+	                    
+
+	                }
+
+	                .nav-full-text {
+	                	display: none;
+	                }
+
+	                .login-form {
+	                	width:100%; height:auto;
+	                }
+	                
+	                textarea:focus,
+	                input[type="text"]:focus,
+	                input[type="password"]:focus,
+	                input[type="datetime"]:focus,
+	                input[type="datetime-local"]:focus,
+	                input[type="date"]:focus,
+	                input[type="month"]:focus,
+	                input[type="time"]:focus,
+	                input[type="week"]:focus,
+	                input[type="number"]:focus,
+	                input[type="email"]:focus,
+	                input[type="url"]:focus,
+	                input[type="search"]:focus,
+	                input[type="tel"]:focus,
+	                input[type="color"]:focus,
+	                select[name="userType"]:focus,
+	                .uneditable-input:focus {   
+	                  border-color: #740f12;
+	                  box-shadow: 0 1px 1px #740f12 inset, 0 0 8px #740f12;
+	                  outline: 0 none;
+	                }
+	        }
+	        @media only screen and (min-width: 701px) {
+	            /* styles for MacBook Pro-sized screens and larger */
+	            body, html {
+				  height: 100%;
+				  overflow: auto;
+				}
+
+	              
+	             body
+	                {
+	                    background-image: linear-gradient(#740f12, #fcb141);
+	                    height: 100%; 
+
+					  	/* Center and scale the image nicely */
+					  	background-position: center;
+					  	background-repeat: no-repeat;
+					  	background-size: cover;
+
+	                }
+
+	                .nav-short-text {
+	                	display: none;
+	                }
+
+	                 .login-form {
+	                	width:400px; height:auto;
+	                }
+
+	                textarea:focus,
+	                input[type="text"]:focus,
+	                input[type="password"]:focus,
+	                input[type="datetime"]:focus,
+	                input[type="datetime-local"]:focus,
+	                input[type="date"]:focus,
+	                input[type="month"]:focus,
+	                input[type="time"]:focus,
+	                input[type="week"]:focus,
+	                input[type="number"]:focus,
+	                input[type="email"]:focus,
+	                input[type="url"]:focus,
+	                input[type="search"]:focus,
+	                input[type="tel"]:focus,
+	                input[type="color"]:focus,
+	                select[id="userType"]:focus,
+	                .uneditable-input:focus {   
+	                  border-color: #740f12;
+	                  box-shadow: 0 1px 1px #740f12 inset, 0 0 8px #740f12;
+	                  outline: 0 none;
+	                }
+	        }

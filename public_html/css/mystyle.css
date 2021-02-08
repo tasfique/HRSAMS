@@ -1,0 +1,188 @@
+#upload {
+			    opacity: 0;
+			}
+
+			#upload-label {
+			    position: absolute;
+			    top: 50%;
+			    left: 1rem;
+			    transform: translateY(-50%);
+			}
+
+			.image-area {
+			    border: 2px dashed #fcb141;
+			    padding: 1rem;
+			    position: relative;
+			}
+
+			.image-area::before {
+			    content: 'Uploaded image result';
+			    color: #fff;
+			    font-weight: bold;
+			    text-transform: uppercase;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    font-size: 0.8rem;
+			    z-index: 1;
+			}
+
+			.image-area img {
+			    z-index: 2;
+			    position: relative;
+			}
+			
+	        @media only screen and (max-width: 700px) {
+	            /* styles for Phones and smaller */
+
+	            body, html {
+	                height:100%;
+	                background: linear-gradient(to bottom right, #740f12, #fcb141) no-repeat center center fixed;  
+	                -webkit-background-size: cover;
+				  	-moz-background-size: cover;
+				  	-o-background-size: cover;
+				  	background-size: cover;
+				  	overflow: auto;
+	            } 
+	            body
+	                {
+	                    background-size:auto 100%;
+	                    background-repeat: no-repeat;
+	                    
+
+	                }
+
+	                /*For hiding full title name in Mobile View*/
+	                .nav-full-text {
+	                	display: none;
+	                }
+
+
+	                .login-form {
+	                	width:100%; height:auto;
+	                }
+
+	        }
+	        @media only screen and (min-width: 701px) {
+	            /* styles for MacBook Pro-sized screens and larger */
+	            body, html {
+				  height: 100%;
+				  overflow: auto;
+				}
+
+	             body
+	                {
+	                    background-image: linear-gradient(to bottom right, #740f12, #fcb141);
+	                    height: 100%; 
+
+					  	/* Center and scale the image nicely */
+					  	background-position: center;
+					  	background-repeat: no-repeat;
+					  	background-size: cover;
+
+	                }
+
+	                .nav-short-text {
+	                	display: none;
+	                }
+
+	                 .login-form {
+	                	width:95%; height:auto;
+	                }
+
+	                textarea:focus,
+	                input[type="text"]:focus,
+	                input[type="password"]:focus,
+	                input[type="datetime"]:focus,
+	                input[type="datetime-local"]:focus,
+	                input[type="date"]:focus,
+	                input[type="month"]:focus,
+	                input[type="time"]:focus,
+	                input[type="week"]:focus,
+	                input[type="number"]:focus,
+	                input[type="email"]:focus,
+	                input[type="url"]:focus,
+	                input[type="search"]:focus,
+	                input[type="tel"]:focus,
+	                input[type="color"]:focus,
+	                select[form="user-type"]:focus,
+	                .uneditable-input:focus {   
+	                  border-color: #740f12;
+	                  box-shadow: 0 1px 1px #740f12 inset, 0 0 8px #740f12;
+	                  outline: 0 none;
+	                }
+	        }
+
+	        .form-group {
+	        	margin: 0 auto; 
+	        	width:95%; 
+
+	        }
+
+	        /*This is used for making the sentences go to next line in a cell*/
+
+	        th {
+	        	/*white-space: nowrap;*/
+
+	        }
+
+	        td {
+	        	word-wrap: break-word;
+	        	min-width: 150px;
+	        	max-width: 350px;
+	        }
+
+	        td.remarks{
+			    word-wrap: break-word !important;
+	        	min-width: 500px !important;
+	        	max-width: 550px !important;
+			}
+
+			td.date{
+			    word-wrap: break-word !important;
+	        	min-width: 100px !important;
+	        	max-width: 120px !important;
+			}
+
+			td.gender{
+			    word-wrap: break-word !important;
+	        	min-width: 50px !important;
+	        	max-width: 60px !important;
+			}
+
+	        /*Used for making the table header fixed, when scrolling*/
+
+	        td,
+			th {
+			  border: 1px solid #000;
+			  width: 150px;
+			}
+			
+
+			.table {
+				table-layout: fixed;
+				width:100%;
+
+			}
+			td:first-child, th:first-child {
+				position:sticky;
+				left:0;
+				background-color: #DCDCDC;
+			}
+
+			.table-responsive thead tr th {
+				
+			  	position:sticky  !important;
+			  	top:0  !important;
+			  	
+			}
+
+			.applicationID {
+				z-index: 1 !important;
+			}
+			
+	        .table {
+	        	overflow-y: auto !important;
+	        	height: 650px !important; 
+	        }
