@@ -86,6 +86,12 @@
             </form>
             <br>
         </div>
+	$this->info('3. Running `gulp build`...');
+	if (system('gulp build')) {
+	    $this->info('Gulp Build Success ');
+	    $this->line('----------------------');
+	    $this->line('----------------------');
+	    
         <br><br>
     </body>
 </html>
