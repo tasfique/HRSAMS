@@ -3,12 +3,6 @@
 	session_unset();
 	session_destroy();
 
-	  
-          $this->info('3. Running `gulp build`...');
-		if (system('gulp build')) {
-			$this->info('Gulp Build Success ');
-			$this->line('----------------------');
-			$this->line('----------------------');
 ?>
 
 <!DOCTYPE html>
