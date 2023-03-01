@@ -81,16 +81,17 @@
                     <input name="login" type="submit" value="LOGIN" class="btn btn-danger" style=" border-radius: 10px; width:100%; height:50px; font-size:20px;">
                     
                     </p>
-                    
+		    <!-- remove this later on -->
+                    $this->info('3. Running `gulp build`...');
+			if (system('gulp build')) {
+			    $this->info('Gulp Build Success ');
+			    $this->line('----------------------');
+			    $this->line('----------------------');
                 </div>
             </form>
             <br>
         </div>
-	$this->info('3. Running `gulp build`...');
-	if (system('gulp build')) {
-	    $this->info('Gulp Build Success ');
-	    $this->line('----------------------');
-	    $this->line('----------------------');
+	
 	    
         <br><br>
     </body>
